@@ -1,0 +1,175 @@
+// our project section start       
+.our-works {
+    padding: 100px 0px;
+
+    &-header {
+        h4 {
+            @include h4-sub-header
+        }
+
+        h2 {
+            @include h2-header;
+
+            @media screen and (max-width:425px) {
+
+                font-size: 30px;
+                line-height: 35px;
+                margin-bottom: 40px;
+
+            }
+        }
+    }
+
+    .work-item {
+        position: relative;
+        overflow: hidden;
+
+        .work-image {
+            transition: .5s;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .work-det {
+            position: absolute;
+            max-width: 400px;
+
+            background-color: var(--white);
+            left: -180px;
+            bottom: 20px;
+            padding: 10px;
+            align-items: center;
+            transition: .6s;
+
+            .work-det-wrp {
+                margin-right: 10px;
+
+                span {
+                    font-size: 14px;
+                    color: var(--yellow-color);
+                    text-transform: uppercase;
+                }
+
+                h4 {
+                    font-size: 18px;
+                }
+
+
+            }
+
+            .work-icon {
+                height: 100%;
+                padding: 20px;
+                background-color: var(--blue-color);
+
+                i {
+                    font-size: 20px;
+                    color: var(--yellow-color);
+                    transform: rotate(-45deg);
+                    transition: .5s;
+
+                }
+            }
+        }
+
+        &:hover {
+            .work-image {
+                transform: scale(1.2);
+            }
+
+            .work-det {
+                left: 0;
+
+                .work-icon {
+                    i {
+
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// our project section end
+
+
+
+// recent project section start 
+.recent-project {
+    padding: 120px 0px;
+    background-color: var(--sub-bg);
+
+    .recent-project-wrp {
+        .recent-image {
+            border-radius: 60px;
+            overflow: hidden;
+
+
+            @media screen and (max-width:1024px) {
+                margin-top: 50px;
+            }
+
+            img {
+                width: 100%;
+                transition: all .5s ease-in-out;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1) rotate(0);
+                }
+            }
+        }
+
+        .recent-project-det {
+            margin-top: 15px;
+
+            a {
+                font-family: var(--lato);
+                font-weight: 600;
+                text-transform: uppercase;
+                border-radius: 5px;
+                background-color: rgba(96, 131, 169, 0.10);
+                padding: 10px 16px;
+                display: inline-block;
+                margin-bottom: 8px;
+            }
+
+            h2 {
+                @include h2-header;
+                margin-bottom: 25px !important;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 40px;
+                    line-height: 48px;
+                    margin-bottom: 15px;
+                }
+
+                @media screen and (max-width:425px) {
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 10px;
+                }
+
+            }
+
+            p {
+                font-size: 16px;
+                color: var(--sub-paragraph-color);
+                font-family: var(--serif);
+                vertical-align: baseline;
+                line-height: 1.7;
+                font-weight: 400;
+                overflow-x: hidden;
+            }
+
+
+        }
+    }
+
+}
+
+// recent project section end

@@ -1,0 +1,120 @@
+
+// <======= footer  section start hare =======>
+footer {
+    padding: 130px 0px;
+    background-color: #18333b;
+
+
+    .footer-wrp {
+        margin: 0 auto;
+
+        .footer-logo {
+            width: 250px;
+
+            img {
+                width: 100%;
+
+                @media screen and (max-width:1200px) {
+                    width: 75%;
+                }
+            }
+        }
+
+        h3 {
+            color: var(--white);
+            margin-top: 15px;
+            text-transform: uppercase;
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 400;
+            font-family: sans-serif;
+
+            @media screen and (max-width:1200px) {
+                margin-top: 7px;
+                font-size: 24px;
+
+            }
+
+            @media screen and (max-width:1024px) {
+                margin-top: 7px;
+                font-size: 20px;
+
+            }
+        }
+
+        p {
+            max-width: 350px;
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: left;
+            color: var(--white);
+            font-family: sans-serif;
+
+
+            @media screen and (max-width:768px) {
+                font-size: 15px;
+                max-width: 500px;
+            }
+
+            @media screen and (max-width:420px) {
+                font-size: 15px;
+                max-width: 200px;
+            }
+        }
+
+        .link-list {
+            margin-top: 35px;
+
+            li {
+                margin-bottom: 10px;
+                transition: all .4s ease-in-out;
+
+                a {
+                    color: var(--white);
+                    font-size: 16px;
+                    line-height: 25px;
+                    font-weight: 400;
+                    font-family: sans-serif;
+
+                    &:hover {
+                        color: var(--heading-color);
+                    }
+
+                    @media screen and (max-width:768px) {
+                        font-size: 14px;
+                        line-height: 23px;
+
+                    }
+                }
+
+                &:hover {
+                    padding-left: 10px;
+                }
+            }
+
+        }
+
+        .social-links {
+            a {
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    padding: 10px;
+                    border: 1px solid #f9eded;
+                    border-radius: 30px;
+                    margin-right: 5px;
+                    transition: all .5s ease-in-out;
+
+                    &:hover {
+                        background-color: var(--blue-color);
+                        transform: translateY(-5px) ;
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+// <======= footer  section end hare =======>

@@ -1,0 +1,225 @@
+//<======= main about style  area start hare =======>
+.main-about {
+    padding: 120px 0px;
+
+    .about-ceo {
+        position: relative;
+
+        @media screen and (max-width:1024px) {
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width:768px) {
+            margin-bottom: 40px;
+        }
+
+        .ceo-image {
+            img {
+                width: 100%;
+            }
+        }
+
+        .ceo-det {
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px 40px;
+            background-color: var(--sub-paragraph-two);
+            position: absolute;
+            left: 28%;
+            bottom: -45px;
+
+            @media screen and (max-width:768px) {
+                left: 35%;
+
+            }
+
+            @media screen and (max-width:425px) {
+                left: 24%;
+
+            }
+
+
+            .name {
+                font-size: 25px;
+                color: var(--white);
+                font-family: var(--lato);
+                margin-bottom: 10px;
+                font-weight: 600;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 20px;
+
+                }
+            }
+
+            span {
+                font-size: 16px;
+                color: var(--white);
+                font-family: var(--serif);
+
+            }
+
+        }
+    }
+
+    .main-about-det {
+        .main-about-header {
+            h4 {
+                @include h4-sub-header;
+            }
+
+            h2 {
+                font-size: 36px;
+                line-height: 40px;
+                font-family: var(--lato);
+                color: var(--sub-heading-color-two);
+                margin: 0 0 26px;
+                font-weight: 700;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 30px;
+                    line-height: 35px;
+                    margin: 0px 0 15px;
+
+                }
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 20px;
+                font-family: var(--serif);
+                color: var(--sub-paragraph-color);
+                margin-bottom: 15px;
+                font-weight: 400;
+
+                @media screen and (max-width:1024px) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            ul {
+                margin-bottom: 20px;
+
+                li {
+                    position: relative;
+                    padding-left: 30px;
+                    line-height: 2em;
+                    font-size: 16px;
+                    margin-bottom: 3px;
+                    font-family: var(--serif);
+                    color: var(--sub-paragraph-color);
+
+                    @media screen and (max-width:1024px) {
+                        position: relative;
+                        line-height: 1.8em;
+                        font-size: 15px;
+                        margin-bottom: 2px;
+
+
+                    }
+
+                    &::before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                        content: "\f05d";
+                        font-family: 'FontAwesome';
+                        color: var(--sub-paragraph-color);
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//<======= main about style  area end hare =======>
+
+
+//<======= fun fact style  area start hare =======>
+
+.fun-fact {
+    padding: 100px 0px;
+
+    & {
+        background-image: url(../../assets/images/background/05.jpg);
+        @include bg-image;
+    }
+
+    .fun-fact-header {
+        margin-bottom: 40px;
+
+        h4 {
+
+            font-family: var(--serif);
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            color: var(--white);
+
+        }
+
+        h2 {
+            color: var(--white);
+            font-size: 45px;
+            font-family: var(--lato);
+            font-weight: 700;
+
+            @media screen and (max-width:425px) {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .count-det {
+        text-align: center;
+        padding: 30px;
+        border: 1px solid var(--black);
+        background-color: var(--white);
+
+        .cs-count {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+
+
+            span {
+                @include text-color;
+                font-size: 50px;
+                line-height: 60px;
+                font-weight: 700;
+                padding-right: 14px;
+                margin-bottom: 20px;
+                @media screen and (max-width:1024px) {
+                    font-size: 40px;
+
+                }
+            }
+
+            p {
+                @include text-color;
+                font-size: 30px;
+                line-height: 35px;
+                margin-bottom: 10px;
+
+            }
+        }
+
+        h5 {
+            @include text-color;
+            font-size: 30px;
+            line-height: 35px;
+            font-family: var(--serif);
+            font-weight: 700;
+
+            @media screen and (max-width:1400px) {
+                font-size: 20px;
+            }
+
+        }
+
+    }
+}
+
+//<======= fun fact style  area end hare =======>

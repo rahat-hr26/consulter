@@ -1,0 +1,47 @@
+@mixin bg-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+@mixin h4-sub-header {
+    font-size: 16px;
+    font-family: var(--lato);
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgba(96, 131, 169, 0.10);
+    padding: 10px 16px;
+    display: inline-block;
+    color: var(--black);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+
+}
+
+@mixin h2-header {
+    font-size: 48px;
+    line-height: 56px;
+    font-family: var(--lato);
+    font-weight: 700;
+    background: linear-gradient(-45deg, #2b2002 0%, #65ec4a 100%);
+    color: transparent;
+    background-clip: text;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+}
+
+@mixin radius($width, $height, $line-hight) {
+    width: $width;
+    height: $height;
+    line-height: $line-hight;
+    text-align: center;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+@mixin text-color {
+    background: linear-gradient(-45deg, #2b2002 0%, #65ec4a 100%);
+    color: transparent;
+    background-clip: text;
+}

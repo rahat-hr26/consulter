@@ -1,0 +1,280 @@
+// <====== cs-team  style start  hare ======>
+.cs-team {
+    padding: 100px 0px;
+
+    .cs-member {
+        box-shadow: 0 5px 20px rgba(34, 34, 34, 0.1);
+        position: relative;
+        overflow: hidden;
+
+        .cs-member-image {
+            img {
+                width: 100%;
+            }
+        }
+
+        .cs-member-social {
+            padding: 15px;
+            position: absolute;
+            right: -55px;
+            bottom: 102px;
+            background-color: var(--blue-color);
+            display: flex;
+            flex-direction: column;
+            transition: .5s;
+
+            .social-icon {
+                color: var(--white);
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .cs-member-det {
+            padding: 20px 20px 25px;
+            background: #fff;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+            z-index: 1;
+            position: relative;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                font-family: var(--serif);
+                font-weight: 700;
+                font-size: 25px;
+                text-transform: capitalize;
+                color: var(--sub-heading-color-two);
+                transition: .4s;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: var(--blue-color);
+                }
+            }
+
+            span {
+                text-transform: uppercase;
+                font-size: 14px;
+                color: var(--sub-paragraph-two);
+            }
+        }
+
+        &:hover {
+            .cs-member-social {
+                right: 0px;
+            }
+
+        }
+    }
+
+}
+
+
+// <====== cs-team  style end  hare ======>
+
+
+// <====== team detail style start hare ======>
+.team-detail {
+    padding: 120px 0px;
+
+    .member-detail {
+        position: relative;
+        padding: 30px;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+
+        .image {
+
+            img {
+                position: relative;
+                display: inline-block;
+                border-radius: 5px;
+                width: 100%;
+            }
+
+        }
+
+        .member-content {
+            margin-top: 15px;
+            text-align: center;
+
+            h3 {
+                font-weight: 700;
+                color:var(--sub-heading-color-two);
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+
+            .text {
+                color: var(--sub-paragraph-color);
+                font-size: 18px;
+                line-height: 1.7em;
+                margin-bottom: 8px;
+            }
+
+            .personal-info {
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    color: var(--sub-paragraph-color);
+                    margin-bottom: 8px;
+
+                    span {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .social-box {
+            a {
+                position: relative;
+                color: #626262;
+                font-size: 28px;
+                margin: 0px 5px;
+                transition: .5s;
+
+                &:hover {
+                    color: var(--blue-color);
+                }
+            }
+        }
+    }
+
+    .member-det-wrp {
+        margin-top: 50px;
+
+        @media screen and (max-width:1024px) {
+            margin-top: 0px;
+
+        }
+
+        h2 {
+            font-size: 36px;
+            line-height: 40px;
+            color: var(--sub-heading-color-two);
+            font-weight: 700;
+            margin-bottom: 20px;
+
+            @media screen and (max-width:1024px) {
+                margin-bottom: 10px;
+
+            }
+        }
+
+        h4 {
+            color: var(--sub-paragraph-two);
+            font-weight: 600;
+            line-height: 1.3em;
+            margin-top: 15px;
+            margin-bottom: 22px;
+
+            @media screen and (max-width:1024px) {
+                margin-bottom: 10px;
+
+            }
+        }
+
+        .student-list {
+            margin-bottom: 20px;
+
+            @media screen and (max-width:1024px) {
+                margin-bottom: 10px;
+            }
+
+            ul {
+                display: flex;
+
+                li {
+                    color:var(--sub-heading-color-two);
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 1.3em;
+                    margin-right: 50px;
+                    display: inline-block;
+                    list-style: disc;
+                    margin-bottom: 20px;
+
+                    @media screen and (max-width:1024px) {
+                        margin-bottom: 10px;
+                        margin-right: 15px;
+                        font-size: 15px;
+
+                    }
+
+                    .fa-star {
+                        color: var(--blue-color);
+                    }
+                }
+            }
+
+        }
+
+        h5 {
+            color:var(--sub-heading-color-two);
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 1.3em;
+            margin-bottom: 10px;
+
+            @media screen and (max-width:1024px) {
+                margin-bottom: 5px;
+
+            }
+        }
+
+        p {
+            color: var(--sub-paragraph-color);
+            font-weight: 400;
+            line-height: 1.9em;
+            font-size: 16px;
+            margin-bottom: 35px;
+
+            @media screen and (max-width:1024px) {
+                margin-bottom: 10px;
+            }
+        }
+
+        .team-skill {
+            .skill-title {
+                color: var(--sub-heading-color-two);
+                font-weight: 700;
+                font-size: 25px;
+                margin-top: 15px;
+                margin-bottom: 50px;
+                @media screen and (max-width:1024px) {
+                        margin-bottom: 30px;
+                
+                    }
+            }
+        }
+
+    }
+
+    .last-content {
+        h3 {
+            font-family: var(--lato);
+            color: var(--sub-heading-color-two);
+            font-weight: 600;
+            line-height: 1.3em;
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 25px;
+            font-family: var(--serif);
+            font-weight: 500;
+            color:var(--sub-paragraph-color);
+        }
+    }
+}
+
+
+// <====== team detail style end hare ======>

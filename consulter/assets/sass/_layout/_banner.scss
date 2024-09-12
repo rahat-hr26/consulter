@@ -1,0 +1,367 @@
+//<======= home page one banner  area start hare =======>
+.banner {
+    .banner-swip1 {
+        background-image: url(../../assets/images/banner/02.jpg);
+        @include bg-image;
+
+        & {
+            padding: 320px 0px;
+            position: relative;
+            z-index: -2;
+
+            @media screen and (max-width:1200px) {
+                padding: 300px 0px;
+
+            }
+
+            @media screen and (max-width:1024px) {
+                padding: 230px 0px;
+            }
+        }
+
+        .image-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .4);
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .banner-text {
+            h1 {
+                margin: 0 auto;
+                max-width: 900px;
+                font-size: 70px;
+                font-family: var(--lato);
+                color: var(--sub-heading-color);
+                font-weight: 700;
+                line-height: 80px;
+                background: linear-gradient(-45deg, #22db0d 0%, #e1e7de 100%);
+                color: transparent;
+                background-clip: text;
+
+                @media screen and (max-width:1200px) {
+                    font-size: 60px;
+                    line-height: 70px;
+                }
+
+                @media screen and (max-width:1024px) {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+
+                @media screen and (max-width:768px) {
+                    font-size: 40px;
+                    line-height: 50px;
+                    max-width: 600px;
+
+                }
+
+                @media screen and (max-width:425px) {
+                    font-size: 25px;
+                    line-height: 35px;
+                    max-width: 280px;
+
+                }
+
+            }
+
+            p {
+                margin: 0 auto;
+                max-width: 700px;
+                font-size: 16px;
+                padding-top: 50px;
+                color: var(--white);
+                font-weight: 600;
+                font-family: var(--lato);
+
+
+                @media screen and (max-width:1200px) {
+                    max-width: 550px;
+                    padding-top: 45px;
+                    font-weight: 500;
+                }
+
+                @media screen and (max-width:768px) {
+                    max-width: 450px;
+                    padding-top: 30px;
+                    font-weight: 500;
+                }
+
+                @media screen and (max-width:425px) {
+                    max-width: 282px;
+                    padding-top: 20px;
+                    font-weight: 400;
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
+
+    .banner-swip2 {
+        background-image: url(../../assets/images/banner/03.jpg);
+        @include bg-image;
+
+        & {
+            padding: 320px 0px;
+            position: relative;
+            z-index: -2;
+
+            @media screen and (max-width:1200px) {
+                padding: 300px 0px;
+            }
+
+            @media screen and (max-width:1024px) {
+                padding: 230px 0px;
+            }
+        }
+
+        .image-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .4);
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .banner-text {
+            h1 {
+                margin: 0 auto;
+                max-width: 900px;
+                font-size: 70px;
+                font-family: var(--lato);
+                color: var(--white);
+                font-weight: 700;
+                line-height: 80px;
+                background: linear-gradient(-45deg, #22db0d 0%, #e1e7de 100%);
+                color: transparent;
+                background-clip: text;
+
+                @media screen and (max-width:1200px) {
+                    font-size: 60px;
+                    line-height: 70px;
+                }
+
+                @media screen and (max-width:1024px) {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+
+                @media screen and (max-width:768px) {
+                    font-size: 40px;
+                    line-height: 50px;
+                    max-width: 600px;
+
+                }
+
+                @media screen and (max-width:425px) {
+                    font-size: 25px;
+                    line-height: 35px;
+                    max-width: 280px;
+
+                }
+
+            }
+
+            p {
+                margin: 0 auto;
+                max-width: 700px;
+                font-size: 16px;
+                padding-top: 50px;
+                color: var(--white);
+                font-weight: 600;
+                font-family: var(--lato);
+
+                @media screen and (max-width:1200px) {
+                    max-width: 550px;
+                    padding-top: 45px;
+                    font-weight: 500;
+                }
+
+                @media screen and (max-width:768px) {
+                    max-width: 450px;
+                    padding-top: 30px;
+                    font-weight: 500;
+                }
+
+                @media screen and (max-width:425px) {
+                    max-width: 282px;
+                    padding-top: 20px;
+                    font-weight: 400;
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
+
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #74b784;
+    ;
+}
+
+//<======= home page one banner  area end hare =======>
+
+
+//<======= home page two banner  area start hare =======>
+.banner-two {
+    background-image: url(../../assets/images/banner/04.jpg);
+    @include bg-image;
+
+    & {
+        position: relative;
+        padding: 230px 0px;
+        z-index: -2;
+
+        @media screen and (max-width:375px) {
+            padding: 180px 0px;
+
+        }
+    }
+
+    .image-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .4);
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .banner-text {
+
+        h4 {
+            max-width: 610px;
+            color: var(--sub-heading-color);
+            font-size: 25px;
+            text-transform: uppercase;
+            font-family: var(--lato);
+            margin-bottom: 70px;
+            padding: 0px 5px 0px 5px;
+            background-color: var(--sub-bg-three);
+
+            @media screen and (max-width:768px) {
+                max-width: 490px;
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+
+            @media screen and (max-width:425px) {
+                max-width: 380px;
+                font-size: 15px;
+                margin-bottom: 25px;
+            }
+
+            @media screen and (max-width:375px) {
+                max-width: 325px;
+                font-size: 13px;
+                margin-bottom: 15px;
+            }
+        }
+
+        h1 {
+            max-width: 800px;
+            font-size: 70px;
+            line-height: 80px;
+            color: var(--white);
+            font-weight: 500;
+            font-family: var(--serif);
+
+            strong {
+                color: var(--heading-color);
+            }
+
+            span {
+                color: var(--yellow-color);
+            }
+
+            @media screen and (max-width:768px) {
+                max-width: 675px;
+                font-size: 55px;
+                font-weight: 500;
+                line-height: 65px;
+            }
+
+            @media screen and (max-width:425px) {
+                max-width: 620px;
+                font-size: 35px;
+                font-weight: 500;
+                line-height: 50px;
+            }
+
+            @media screen and (max-width:375px) {
+                max-width: 335px;
+                font-size: 25px;
+                font-weight: 500;
+                line-height: 40px;
+            }
+
+        }
+    }
+}
+
+// home page two banner area end hare  =======>
+
+
+// <=======sub banner section  start =======>
+.sub-banner {
+    background-image: url(../../assets/images/background/08.jpg);
+    @include bg-image;
+    z-index: -2;
+
+    & {
+
+        position: relative;
+        padding: 200px 0px;
+
+    }
+
+
+    .sub-banner-header {
+
+        h1 {
+            font-size: 48px;
+            line-height: 55px;
+            text-transform: uppercase;
+            font-family: var(--lato);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 15px;
+
+            @media screen and (max-width:1024px) {
+                font-size: 50px;
+                line-height: 55px;
+            }
+
+            @media screen and (max-width:425px) {
+                font-size: 25px;
+                line-height: 28px;
+
+            }
+
+        }
+
+    }
+}
+
+// overlay style ====>
+
+.image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+// <=======sub banner section  end =======>
